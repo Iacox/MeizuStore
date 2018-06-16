@@ -1,0 +1,312 @@
+* {
+    padding: 0;
+}
+
+html {
+    display: block;
+}
+
+head {
+    display: none;
+}
+
+body {
+    background: #e0e0e0;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    font: 14px/1.5 verdana, sans-serif;
+    display: block;
+    min-width: 700px;
+}
+
+.top {
+    background: dimgray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 160px;
+    display: block;
+    background-image: url(images/header-background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.header {
+    position: relative;
+    min-height: 160px;
+    min-width: 730px;
+}
+
+@media screen and (max-width: 850px) {
+    #square1,
+    #square2,
+    #square3 {
+        display: none;
+    }
+}
+
+header h1 {
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    padding-top: 40px;
+    float: left;
+    width: 180px;
+    color: aliceblue;
+    margin-left: 20px;
+}
+
+.logo {
+    float: left;
+}
+
+.menu {
+    margin: 0 auto;
+    padding: 1px 0;
+    list-style-type: none;
+    height: 26px;
+}
+
+.menu li {
+    float: right;
+    margin: 0 auto;
+    padding: 0;
+    width: 10%;
+    min-width: 90px;
+}
+
+ul.catalogue li {
+    float: right;
+    margin: 0 auto;
+    padding: 0;
+    width: 33.333333%;
+    min-width: 120px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.content .menu .navigation {
+    height: 170px;
+}
+
+.content .menu {
+    height: 180px;
+}
+
+ul.nav {
+    margin: 15px 25px 0 0;
+}
+
+.content .menu li {
+    height: 170px;
+}
+
+.content .menu .navigation img {
+    padding-top: 10px;
+}
+
+.menu a.navigation {
+    background: lightgray;
+    color: black;
+}
+
+a.navigation:hover {
+    background: darkslategray;
+    color: ghostwhite;
+}
+
+.menu a.actual {
+    background: darkslategray;
+    color: ghostwhite;
+
+}
+
+.menu a {
+    position: relative;
+    display: block;
+    margin: 1px;
+    height: 24px;
+    font-size: 10px;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.menu a span {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 85%;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
+    min-width: 600px;
+}
+
+.content {
+    background: white;
+    color: #333;
+    padding: 1px;
+    margin: 0 auto;
+}
+
+.catalogue p:first-letter {
+    color: red;
+}
+
+div.catalogue p {
+    overflow: hidden;
+}
+
+a.object {
+    float: left;
+    margin-right: 20px;
+    border: 3px;
+    border-color: blue;
+}
+
+.price {
+    margin: 0;
+    display: block;
+    height: 50px;
+    width: 100%;
+}
+
+.buy:hover {
+    cursor: pointer;
+    background-color: darkslategray;
+}
+
+.buy:focus {
+    color: darkgray;
+    background-color: darkslategray;
+}
+
+.buy {
+    height: 50px;
+    width: 100px;
+    margin: 0 0 20px 10px;
+    background-color: darkgray;
+    color: azure;
+    font-style: italic;
+    font-size: 18px;
+    font-variant-caps: all-petite-caps;
+    border-radius: 50px;
+}
+
+table.podrobno {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+.podrobno tr.first {
+    height: 100px;
+}
+
+.podrobno td {
+    border: 1px solid #000;
+}
+
+div.podrobno ul li {
+    list-style-type: none;
+    font-size: 18px;
+    font-style: italic;
+}
+
+div.podrobno ul li::before {
+    content: url(images/tick-circle.jpg);
+}
+
+input.label {
+    text-transform: capitalize;
+    font-size: 15px;
+    font-style: italic;
+    background-color: orange;
+}
+
+input.email {
+    text-transform: capitalize;
+    font-size: 15px;
+    font-style: italic;
+    background-color: orange;
+}
+
+div.content label input.email:focus {
+    background-color: yellow;
+    color: red;
+}
+
+textarea.label {
+    height: 100px;
+    width: 250px;
+    text-transform: capitalize;
+    margin-top: 2px;
+    font-size: 15px;
+    font-style: italic;
+    background-color: orange;
+}
+
+.map {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 374px;
+    border: 0;
+}
+
+p.selection {
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+.footer {
+    background-image: url(images/header-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*    background: dimgray;*/
+    color: snow;
+    margin: 10px 0 10px 0;
+    padding: 5px 0 0 0;
+    text-align: right;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    position: absolute;
+    width: 100%;
+    min-height: 60px;
+    clear: both;
+}
+
+h3 {
+    margin: 0.5em 0 0.3em;
+    font-size: 18px;
+    font-weight: normal;
+    color: rgb(50, 22, 176);
+}
+
+.opis {
+    text-align: center;
+}
+
+h5 {
+    padding-right: 30px;
+}
